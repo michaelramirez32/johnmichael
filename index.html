@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -20,7 +21,6 @@
     <link rel="stylesheet" href="index.css">
 
 </head>
-
 
 <body>
 
@@ -106,6 +106,7 @@
                         and creating modern websites.
                     </p>
 
+
                     <div class="social-Icons">
 
                         <a href="https://www.facebook.com/share/1CBfQubY3m/"
@@ -115,6 +116,7 @@
                             <i class="fab fa-facebook"></i>
 
                         </a>
+
 
                         <a href="https://github.com/michaelramirez32"
                             target="_blank"
@@ -239,57 +241,61 @@
                     </div>
 
 
-                        <div class="details-grid">
-
-                            <div>
-
-                                <span>
-                                    Name
-                                </span>
-
-                                <p>
-                                    John Michael Ramirez
-                                </p>
-
-                                <br>
-
-                                <span>
-                                    Age
-                                </span>
-
-                                <p>
-                                    18 years old
-                                </p>
-
-                                <br>
-
-                                <span>
-                                    Interests
-                                </span>
-
-                                <p>
-                                    Web Development & Programming
-                                </p>
-
-                            </div>
+                    <div class="details-grid">
 
 
-                            <div>
+                        <div>
 
-                                <span>
-                                    Education
-                                </span>
+                            <span>
+                                Name
+                            </span>
 
-                                <p>
-                                    Bachelor of Science in Information Technology
-                                    <br><br>
-                                    Batangas State University The National
-                                    Engineering University
-                                </p>
+                            <p>
+                                John Michael Ramirez
+                            </p>
 
-                            </div>
+
+                            <br>
+
+
+                            <span>
+                                Age
+                            </span>
+
+                            <p>
+                                18 years old
+                            </p>
+
+
+                            <br>
+
+
+                            <span>
+                                Interests
+                            </span>
+
+                            <p>
+                                Web Development & Programming
+                            </p>
 
                         </div>
+
+
+                        <div>
+
+                            <span>
+                                Education
+                            </span>
+
+                            <p>
+                                Bachelor of Science in Information Technology
+                                <br><br>
+                                Batangas State University The National
+                                Engineering University
+                            </p>
+
+                        </div>
+
 
                     </div>
 
@@ -359,6 +365,7 @@
                 </div>
 
 
+
                 <div class="skill-card">
 
                     <div class="skill-icon css-icon">
@@ -376,6 +383,7 @@
                     </p>
 
                 </div>
+
 
 
                 <div class="skill-card">
@@ -407,6 +415,7 @@
 
         <section id="project">
 
+
             <div class="section-bg">
 
                 <div class="bg-circle circle-one"></div>
@@ -423,13 +432,88 @@
                 <div class="bg-line line-one"></div>
                 <div class="bg-line line-two"></div>
 
+            </div>
+
+
+
+            <div class="project-header">
+
+                <p>
+                    MY WORK
+                </p>
+
+                <h1>
+                    Projects
+                </h1>
+
+            </div>
+
+
+
+            <div class="project-container">
+
+
+                <div class="project-card">
+
+
+                    <div class="project-image">
+
+                        <i class="fa-solid fa-code"></i>
+
+                    </div>
+
+
+
+                    <div class="project-content">
+
+                        <h2>
+                            Portfolio Website
+                        </h2>
+
+                        <p>
+                            A personal portfolio website created to showcase
+                            my skills, interests, and projects as a BSIT student.
+                            It uses a modern responsive design with dark and
+                            light mode features.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>
+                                HTML
+                            </span>
+
+                            <span>
+                                CSS
+                            </span>
+
+                            <span>
+                                JavaScript
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
         </section>
+
 
     </main>
 
 
 
     <script>
+
+
+        /* ================= THEME TOGGLE ================= */
 
         const themeToggle =
             document.getElementById("theme-toggle");
@@ -459,6 +543,8 @@
 
 
 
+        /* ================= SCROLL REVEAL ================= */
+
         const revealElements =
             document.querySelectorAll(
                 ".about-header, .about-image, .about-box, .personal-details, .skills-header, .skill-card, .project-header, .project-card"
@@ -467,6 +553,7 @@
 
         const revealObserver =
             new IntersectionObserver(
+
                 (entries) => {
 
                     entries.forEach((entry) => {
@@ -480,9 +567,11 @@
                     });
 
                 },
+
                 {
                     threshold: 0.15
                 }
+
             );
 
 
@@ -494,7 +583,9 @@
 
         });
 
+
     </script>
+
 
 </body>
 
