@@ -212,83 +212,10 @@ body.light-mode #theme-toggle:hover {
     }
 }
 
-.bg-dot {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: #ffffff;
-    opacity: 0.3;
-    animation: dotFloat 5s ease-in-out infinite;
-}
-
-.dot-one {
-    top: 25%;
-    left: 12%;
-}
-
-.dot-two {
-    top: 18%;
-    right: 28%;
-    animation-delay: 1s;
-}
-
-.dot-three {
-    bottom: 25%;
-    right: 12%;
-    animation-delay: 2s;
-}
-
-.dot-four {
-    bottom: 18%;
-    left: 35%;
-    animation-delay: 3s;
-}
-
-@keyframes dotFloat {
-    0%, 100% {
-        transform: translateY(0) scale(1);
-        opacity: 0.2;
-    }
-
-    50% {
-        transform: translateY(-18px) scale(1.5);
-        opacity: 0.65;
-    }
-}
-
-.bg-line {
-    position: absolute;
-    width: 500px;
-    height: 1px;
-    background: #ffffff;
-    opacity: 0.07;
-}
-
-.line-one {
-    top: 30%;
-    left: -100px;
-    transform: rotate(-25deg);
-}
-
-.line-two {
-    bottom: 25%;
-    right: -100px;
-    transform: rotate(-25deg);
-}
-
 body.light-mode .bg-grid {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
         linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
-}
-
-body.light-mode .bg-dot {
-    background: #111111;
-}
-
-body.light-mode .bg-line {
-    background: #111111;
 }
 
 /* HOME */
@@ -1446,10 +1373,6 @@ body.light-mode #project::after {
 
     .bg-grid {
         background-size: 45px 45px;
-    }
-
-    .bg-line {
-        width: 300px;
     }
 }
 
