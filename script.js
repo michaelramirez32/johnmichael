@@ -1,62 +1,37 @@
-const themeToggle =
-            document.getElementById("theme-toggle");
+```javascript
+const themeToggle = document.getElementById("theme-toggle");
+const themeIcon = themeToggle.querySelector("i");
 
-        const body =
-            document.body;
+themeToggle.addEventListener("click", function () {
+    document.body.classList.toggle("light-mode");
 
+    const isLightMode = document.body.classList.contains("light-mode");
 
-        themeToggle.addEventListener("click", () => {
+    themeIcon.className = isLightMode ? "fas fa-moon" : "fas fa-sun";
 
-            body.classList.toggle("light-mode");
+    themeToggle.setAttribute(
+        "aria-label",
+        isLightMode ? "Switch to dark mode" : "Switch to light mode"
+    );
+});
 
+const revealElements = document.querySelectorAll(".reveal");
 
-            if (body.classList.contains("light-mode")) {
-
-                themeToggle.innerHTML =
-                    '<i class="fa-solid fa-moon"></i>';
-
-            } else {
-
-                themeToggle.innerHTML =
-                    '<i class="fa-solid fa-sun"></i>';
-
+const revealObserver = new IntersectionObserver(
+    function (entries, observer) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target);
             }
-
         });
+    },
+    {
+        threshold: 0.12
+    }
+);
 
-
-
-        const revealElements =
-            document.querySelectorAll(
-                ".about-header, .about-image, .about-box, .personal-details, .skills-header, .skill-card, .project-header, .project-card"
-            );
-
-
-        const revealObserver =
-            new IntersectionObserver(
-                (entries) => {
-
-                    entries.forEach((entry) => {
-
-                        if (entry.isIntersecting) {
-
-                            entry.target.classList.add("show");
-
-                        }
-
-                    });
-
-                },
-                {
-                    threshold: 0.15
-                }
-            );
-
-
-        revealElements.forEach((element) => {
-
-            element.classList.add("reveal");
-
-            revealObserver.observe(element);
-
-        });
+revealElements.forEach(function (element) {
+    revealObserver.observe(element);
+});
+```
