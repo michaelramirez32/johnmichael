@@ -1,4 +1,3 @@
-```javascript
 const themeToggle = document.getElementById("theme-toggle");
 const themeIcon = themeToggle.querySelector("i");
 
@@ -34,4 +33,3 @@ const revealObserver = new IntersectionObserver(
 revealElements.forEach(function (element) {
     revealObserver.observe(element);
 });
-```
