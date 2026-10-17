@@ -1003,6 +1003,23 @@ body.light-mode .skill-card:hover .skill-icon {
     border-color: #ffffff;
 }
 
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    align-self: flex-start;
+    margin-top: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #c0c0c0;
+    text-decoration: underline;
+}
+
 body.light-mode .project-card {
     border-color: rgba(0, 0, 0, 0.12);
     background: rgba(0, 0, 0, 0.025);
@@ -1030,6 +1047,14 @@ body.light-mode .project-content h2 {
 
 body.light-mode .project-content p,
 body.light-mode .project-tech span {
+    color: #444444;
+}
+
+body.light-mode .project-link {
+    color: #111111;
+}
+
+body.light-mode .project-link:hover {
     color: #444444;
 }
 
